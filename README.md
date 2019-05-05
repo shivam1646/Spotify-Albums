@@ -2,6 +2,12 @@
 
 This project authorizes user via their spotify account using the implicit grant flow and fetches the newly released albums from spotify.
 
+## Screenshots
+
+![screen-shot 1](https://raw.githubusercontent.com/shivam1646/Spotify-Albums/master/screenshots/spotify1.png)
+
+![screen-shot 2](https://raw.githubusercontent.com/shivam1646/Spotify-Albums/master/screenshots/spotify2.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
