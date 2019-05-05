@@ -1,0 +1,22 @@
+<div class="bg-dark">
+	<div class="container">
+		<div class="title">
+			<h2>New <span class="secondary-color">Releases</span></h2>
+			<p>Check out the newly released music albums on <b class="secondary-color">Spotify</b>.</p>
+		</div>
+		<div class="album-container">
+			<div *ngFor="let album of albumList" class="album">
+				<div class="thumbnail">
+					<a href="javascript:"><img src="{{album.images[1].url}}" class="rounded" alt="album_thumbnail"></a>
+				</div>
+				<div class="content">
+					<h6><a href="javascript:" style="color: #7e43d2 !important;">{{album.artists[0].name}}</a></h6>
+					<p>{{album.name}}</p>
+				</div>
+			</div>
+		</div>
+		<div *ngIf="nextUrl" class="text-center">
+			<button (click)="loadMore()" class="next"> More </button>
+		</div>
+	</div>
+</div>
